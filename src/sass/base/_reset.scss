@@ -46,9 +46,12 @@ body {
   font-size: 1rem;
 }
 
+h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-weight: $normal;
 }
 
@@ -68,10 +71,23 @@ img {
   max-width: 100%;
   display: block;
   width: 100%;
-
   object-fit: cover;
   object-position: center;
-  vertical-align: bottom;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+picture,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 table {
