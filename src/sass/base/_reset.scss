@@ -1,5 +1,8 @@
 @use "global" as *;
 
+/* リセットCSS
+---------------------------------------------------------------------------- */
+
 *,
 *::before,
 *::after {
@@ -33,11 +36,15 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 60px;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  
+
   line-height: 1.5;
   color: $black;
   background-color: $white;
@@ -75,6 +82,15 @@ img {
   object-position: center;
 }
 
+video {
+  height: auto;
+  border: none;
+}
+
+a,
+dl,
+dt,
+dd,
 article,
 aside,
 details,
@@ -92,9 +108,9 @@ section {
 
 table {
   border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-	table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
 }
 
 /* Natural flow and rhythm in articles by default */
@@ -114,7 +130,6 @@ select {
 img:not([alt]) {
   filter: blur(10px);
 }
-
 
 /* フォームリセット */
 input,
@@ -151,3 +166,6 @@ select {
 select::-ms-expand {
   display: none;
 }
+
+/* CSS
+---------------------------------------------------------------------------- */
